@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="js/1.js"></script>
+	<link rel="stylesheet" href="css/1.css" />
+    <title>登录</title>
+</head>
+<style>
+    input[type='checkbox'] { -webkit-appearance: none; background: #fff url('img/未选中-单选框01.png'); /*未选中的样式*/ background-size: cover; height:20px; width: 20px; vertical-align: middle; border:none; } input[type='checkbox']:checked { background: #fff url('img/选中单选框2.png'); /*选中的样式*/ background-size: cover; border:none; }
+
+    
+    </style>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4 bg-info" style="height: 870px;">
+                <div>
+                    <img src="https://static.web.ikea.cn/static/images/headerImages/logo.svg" width="94px" 
+				height="36px" alt="" class="disable-event m-3" data-v-334626ab="">
+                </div>
+                <div class="" style="margin-top: 200px;margin-left: 20%;margin-right: 10%;">
+                    <h1 class="text-warning mb-3"><strong>Hey!</strong></h1>
+                    <h1 class="text-white"><strong>为大众创造美好的</strong></h1>
+                    <h1 class="text-white"><strong>日常生活！</strong></h1>
+                </div>
+            </div>
+            <div class="col-6" >
+                <div class="" style="margin-top: 150px;margin-left: 30%;">
+                    <h2 class="text-dark"><strong> 欢迎来到 <span class="text-info" style=""> 宜家</span>, 很高兴您来到这里</strong></h2>
+                </div>
+                <form class="mt-5 lonform" style="margin-left: 30%;">
+                    <div style="width: 500px;">
+                        <input type="tel" id="telnum" class="mt-3" placeholder="用户名" style="width: 500px;height: 30px;">
+                    </div>
+                    
+                    <input type="password" id="pwd" class="mt-5" placeholder="密码" style="width: 300px;height: 30px;">
+                    <div class="mt-5"><input type="checkbox" id="demo" ><label for="demo" class="text-muted ml-2">我已同意并接受<a href="#">隐私条款</a></label></div>
+                    <button style="display: inline-block;width: 510px; height: 50px;" class=" mt-5 btn btn-success btn-circle">登录 </button>
+                    <div class="mt-5">
+                        没有账号？<a href="#">去注册</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

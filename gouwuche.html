@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="js/1.js"></script>
+	<link rel="stylesheet" href="css/1.css" />
+    <title>购物车</title>
+    <style>
+    input[type='checkbox'] { -webkit-appearance: none; background: #fff url('img/未选中-单选框01.png'); /*未选中的样式*/ background-size: cover; height:30px; width: 30px; vertical-align: middle; border:none; } input[type='checkbox']:checked { background: #fff url('img/选中单选框2.png'); /*选中的样式*/ background-size: cover; border:none; }
+
+    
+    </style>
+</head>
+<body>
+    	<!-- 头部导航栏 -->
+		<div class="container header" >
+			<!-- fixed-top 类来实现导航栏的固定： -->
+			<nav class="navbar navbar-expand-xl text-dark bg-info fixed-top row" > 
+			<!-- 果使用图片，可以使用 .navbar-brand 类来设置图片自适应导航栏。 -->
+			<a class="navbar-brand nav-link active" href="#demo7" data-toggle="tab">
+				<img src="https://static.web.ikea.cn/static/images/headerImages/logo.svg" width="94px" 
+				height="36px" alt="" class="disable-event" data-v-334626ab="">
+			</a>
+				<ul class="nav nav-tabs  col-sm-4 m-r-10 " id="content2">
+					
+				<li class="nav-item"><a  class="nav-link text-dark  taba" href="#demo1" data-toggle="tab">所有商品 </a></li>
+				<li class="nav-item"><a  class="nav-link text-dark taba" href="#demo2" data-toggle="tab">家居灵感    </a></li>
+				<li class="nav-item"><a  class="nav-link text-dark taba" href="#demo3" data-toggle="tab">房间 </a></li>
+				<li class="nav-item"><a  class="nav-link text-dark taba" href="#demo4" data-toggle="tab">特惠 </a></li>
+				<li class="nav-item"><a  class="nav-link text-dark taba" href="#demo5" data-toggle="tab">新品 </a></li>
+				<li class="nav-item"><a  class="nav-link text-dark taba" href="#demo6" data-toggle="tab">服务 </a></li>
+				
+				</ul>
+				
+				<div class="float-end col-sm-3">
+					<form class=" form-inline float-right ">
+						<input type="text" placeholder="search" class="bg-white form-control" />
+						<button type="button" class="btn " value="搜索" style="background-color:#00bfff57;">搜索</button>
+					</form>
+				</div>
+				
+				<a class="navbar-brand col-sm-1 navbar-brand" href="index.html" >
+					<img class="float-right" src="img/主页.png" style="width: 24px;height: 24px;"/>
+				</a>
+				<a class="navbar-brand col-sm-1 float-right" href="gerenzhongxin.html" >
+					<img class="float-right" src="img/个人中心 - .png" style="width: 24px;height: 24px;"/>
+				</a>
+				<a class="navbar-brand col-sm-1 float-right" href="gouwuche.html" >
+					<img class="float-right" src="img/购物车.png" style="width: 24px;height: 24px;"/>
+				</a>
+				
+			</nav>
+			
+		</div>
+		<!-- 导航栏内容 -->
+		<div class="tab-content mt-3 " id="content1">
+			
+			<div class=" p-3  tab-pane  flebox " id="demo1" style="margin-top: 60px;height: 300px;">
+				<div class="" style="width: 200px;height: 500px;">   
+					
+					<ul class="nav nav-tabs nav-pills flex-column">
+											
+						<li class="nav-item text-dark">
+							<a class=" nav-link active text-dark mb-2"  href="#mydiv6" data-toggle="tab">全部家具</a>
+						</li>
+						<li class="nav-item text-dark">
+							<a class="nav-link text-dark mb-2" href="#mydiv1" data-toggle="tab">桌椅套件</a>
+						</li>
+						<li class="nav-item text-dark">
+							<a class="nav-link text-dark mb-2" href="#mydiv2" data-toggle="tab">厨具</a>
+						</li>
+						<li class="nav-item text-dark">
+							<a class="nav-link text-dark mb-2" href="#mydiv3" data-toggle="tab">床和床垫</a>
+						</li>
+						<li class="nav-item text-dark">
+							<a class="nav-link text-dark mb-2" href="#mydiv4" data-toggle="tab">灯具照明</a>
+						</li>
+						<li class="nav-item ">
+							<a class="nav-link text-dark mb-2" href="#mydiv5" data-toggle="tab">装饰品</a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="p-3  tab-content tabbox" style="margin-left: 220px; margin-top: -500px;">
+					<div class="tab-pane active" id="mydiv6">
+						<a style="align-self: center;">
+							<img class="img-thumbnail" src="img/thumbnail.png" style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;桌椅套件
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail "src="https://res.app.ikea.cn/static/public/subcatalog/55036/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;家具组合
+						</a>
+						<a style="align-self: center;"class="m-lg-3">
+							<img class="img-thumbnail"src="https://res.app.ikea.cn/static/public/subcatalog/fu003/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;沙发
+						</a>
+						<a style="align-self: center;"class="ml-3">
+							<img class="img-thumbnail"src="	https://res.app.ikea.cn/static/public/subcatalog/bm003/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;床
+						</a>
+						<a style="align-self: center;"class="ml-3">
+							<img class="img-thumbnail"src="	https://res.app.ikea.cn/static/public/subcatalog/st002/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;书和置物架
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail"src="	https://res.app.ikea.cn/static/public/subcatalog/10475/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;多媒体家具
+						</a>
+						<a style="align-self: center;">
+							<img class="img-thumbnail"src="	https://res.app.ikea.cn/static/public/subcatalog/st004/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;抽屉柜
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail"src="	https://res.app.ikea.cn/static/public/subcatalog/fu002/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;椅子
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail"src="	https://res.app.ikea.cn/static/public/subcatalog/19053/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;衣柜
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail"src="	https://res.app.ikea.cn/static/public/subcatalog/od003/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;户外家具
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail"src="	https://res.app.ikea.cn/static/public/subcatalog/30454/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;餐桌柜
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail"src="	https://res.app.ikea.cn/static/public/subcatalog/46080/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;房间隔断
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail"src="	https://res.app.ikea.cn/static/public/subcatalog/45780/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;婴儿家具
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail"src="	https://res.app.ikea.cn/static/public/subcatalog/fu005/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;推车
+						</a>
+						
+					</div>
+					<div class="tab-pane mt-3" id="mydiv1" >
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail"src="	https://res.app.ikea.cn/static/public/subcatalog/16244/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;吧台家具
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail"src="	https://res.app.ikea.cn/static/public/subcatalog/fu006/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;贵妃椅
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail"src="	https://res.app.ikea.cn/static/public/subcatalog/fu002/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;椅子
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail"src="https://res.app.ikea.cn/static/public/subcatalog/19141/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;儿童桌
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail"src="	https://res.app.ikea.cn/static/public/other_catalog/20657/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;梳妆台
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail"src="	https://res.app.ikea.cn/static/public/other_catalog/54173/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;会议桌
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail"src="https://res.app.ikea.cn/static/public/other_catalog/20656/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;床头柜
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail"src="https://res.app.ikea.cn/static/public/other_catalog/16246/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;长几
+						</a>
+					
+					</div>
+					
+					<div class="tab-pane mt-3 " id="mydiv2" >
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail"src="	https://res.app.ikea.cn/static/public/subcatalog/ka003/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;厨具橱柜
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail"src="	https://res.app.ikea.cn/static/public/subcatalog/24255/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;内部配件
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail"src="	https://res.app.ikea.cn/static/public/subcatalog/16200/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;置物架
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail"src="	https://res.app.ikea.cn/static/public/subcatalog/ka002/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;厨房电器
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail"src="	https://res.app.ikea.cn/static/public/subcatalog/16282/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;厨房照明
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail"src="	https://res.app.ikea.cn/static/public/subcatalog/19121/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;墙面板
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail"src="https://res.app.ikea.cn/static/public/subcatalog/16298/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;拉手和按钮
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail"src="https://res.app.ikea.cn/static/public/subcatalog/24264/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							厨房操作台面
+						</a>
+						
+
+					</div>
+					<div class="tab-pane mt-3 " id="mydiv3" >
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail" src="https://res.app.ikea.cn/static/public/subcatalog/bm003/thumbnail.png?v=20210715" style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;床
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail"src="	https://res.app.ikea.cn/static/public/subcatalog/tl004/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;卧室纺织品
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail"src="	https://res.app.ikea.cn/static/public/subcatalog/bm002/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;床垫
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail"src="	https://res.app.ikea.cn/static/public/subcatalog/20656/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;床头柜
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail"src="https://res.app.ikea.cn/static/public/subcatalog/19064/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;床头板
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail"src="	https://res.app.ikea.cn/static/public/subcatalog/19059/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;床底收纳
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail"src="https://res.app.ikea.cn/static/public/subcatalog/24827/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;床板条
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail"src="	https://res.app.ikea.cn/static/public/subcatalog/54992/thumbnail.png?v=20210715" 
+							alt="家具组合"  style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;卧室家具组合
+						</a>
+
+					</div>
+					<div class="tab-pane mt-3 " id="mydiv4" >
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail" src="https://res.app.ikea.cn/static/public/subcatalog/li002/thumbnail.png?v=20210715" style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;灯具
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail" src="https://res.app.ikea.cn/static/public/subcatalog/10744/thumbnail.png?v=20210715" style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;LED灯
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail" src="https://res.app.ikea.cn/static/public/subcatalog/14971/thumbnail.png?v=20210715" style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;装饰性灯具
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail" src="https://res.app.ikea.cn/static/public/subcatalog/16280/thumbnail.png?v=20210715"" style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;内置灯具
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail" src="https://res.app.ikea.cn/static/public/subcatalog/36812/thumbnail.png?v=20210715" style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;智能灯具
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail" src="https://res.app.ikea.cn/static/public/subcatalog/17897/thumbnail.png?v=20210715" style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;户外照明
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail" src="https://res.app.ikea.cn/static/public/subcatalog/10736/thumbnail.png?v=20210715" style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;浴室照明
+						</a>
+					
+					</div>
+					<div class="tab-pane mt-3 " id="mydiv5" >
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail" src="https://res.app.ikea.cn/static/public/subcatalog/10757/thumbnail.png?v=20210715" style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;图片和框架
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail" src="https://res.app.ikea.cn/static/public/subcatalog/pp003/thumbnail.png?v=20210715" style="width: 100px;height: 100px;">
+							<br>
+							人造植物人造花
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail" src="https://res.app.ikea.cn/static/public/subcatalog/10550/thumbnail.png?v=20210715" style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;储物盒
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail" src="https://res.app.ikea.cn/static/public/subcatalog/pp004/thumbnail.png?v=20210715" style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;花盆
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail" src=https://res.app.ikea.cn/static/public/subcatalog/20489/thumbnail.png?v=20210715" style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;镜子
+						</a>
+
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail" src="https://res.app.ikea.cn/static/public/subcatalog/10769/thumbnail.png?v=20210715" style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;花瓶和碗
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail" src="https://res.app.ikea.cn/static/public/subcatalog/10759/thumbnail.png?v=20210715" style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;时钟
+						</a>
+						<a style="align-self: center;" class="ml-3">
+							<img class="img-thumbnail" src="https://res.app.ikea.cn/static/public/subcatalog/25227/thumbnail.png?v=20210715" style="width: 100px;height: 100px;">
+							<br>
+							&nbsp; &nbsp;纸品屋
+						</a>
+					</div>
+				
+				</div>
+			</div>
+			<div class="tab-pane p-5 lexbox2 mt-3" id="demo2" style="height: 300px;">
+				<a style="align-self: center;">
+					<img class="img-thumbnail" src="https://www.ikea.cn/images/25/6d/256d6f6b2b4e9c26496f29f236286119.jpg?f=xxxs" style="width: 240px;height: 175px;">
+					<br>
+					&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;卧室灵感
+				</a>
+				<a style="align-self: center;" class="ml-3">
+					<img class="img-thumbnail "src="https://www.ikea.cn/images/23/ea/23ea1956c88c5e36fab93b52cba4cd10.jpg?f=xxxs" 
+					alt="家具组合"  style="width: 240px;height: 175px;">
+					<br>
+					&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;客厅灵感
+				</a>
+				<a style="align-self: center;" class="ml-3">
+					<img class="img-thumbnail "src="https://www.ikea.cn/images/e5/42/e5421bce0fca0b6a7bc6796b88d52595.jpg?f=xxxs" 
+					alt="家具组合"  style="width: 240px;height: 175px;">
+					<br>
+					&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;厨房灵感
+				</a>
+				<a style="align-self: center;" class="ml-3">
+					<img class="img-thumbnail "src="https://www.ikea.cn/images/3e/a1/3ea16c092e5826f04bc052d3a3bb7854.jpg?f=xxxs" 
+					alt="家具组合"  style="width: 240px;height: 175px;">
+					<br>
+					&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;餐厅灵感
+				</a>
+				<a style="align-self: center;">
+					<img class="img-thumbnail" src="https://www.ikea.cn/images/f6/e4/f6e467cc8c0e610c6e703d16003bf237.jpg?f=xxxs" style="width: 240px;height: 175px;">
+					<br>
+					&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;书房灵感
+				</a>
+				
+			</div>
+			<div class="tab-pane lexbox3 p-5" id="demo3" style="height: 300px;">
+				<a style="align-self: center;" class="ml-3">
+					<img class="img-thumbnail "src="https://www.ikea.cn/images/b3/71/b37126d66ec75c2bf7dd94729b3f841d.jpg?f=xxxs" 
+					alt="家具组合"  style="width: 240px;height: 175px;">
+					<br>
+					&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;3D房间
+				</a>
+				<a style="align-self: center;" class="ml-3">
+					<img class="img-thumbnail "src="https://www.ikea.cn/images/89/ad/89adafe52568320ef7019da4882276c9.jpg" 
+					alt="家具组合"  style="width: 240px;height: 175px;">
+					<br>
+					&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;卧室
+				</a>
+				<a style="align-self: center;" class="ml-3">
+					
+					<img class="img-thumbnail "src="https://www.ikea.cn/images/5b/2c/5b2c886de66b1373a0fbeb5be15e6837.jpg?f=xxxs" 
+					alt="家具组合"  style="width: 240px;height: 175px;">
+					<br>
+					&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;客厅
+				</a>
+				<a style="align-self: center;" class="ml-3">
+					
+					<img class="img-thumbnail "src="https://www.ikea.cn/images/men2-ting1-de-omar-ao4-ma3-er3-ge1-jia4-shang4-fang4-zhuo2-x-a82f94812a140a5f542b4a8c90b60beb.jpg?f=xxxs" 
+					alt="家具组合"  style="width: 240px;height: 175px;">
+					<br>
+					&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;门厅
+				</a>
+				<a style="align-self: center;" class="ml-3">
+				
+					<img class="img-thumbnail "src="https://www.ikea.cn/images/zhe4-mo2-jian3-dan1-huan2-neng2-suan4-jia1-wu4-suo3-shi4-ma2-47d60884ba33e11b18a72a060ab3bc58.jpg?f=xxxs" 
+					alt="家具组合"  style="width: 240px;height: 175px;">
+					<br>
+					&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;阳台
+				</a>
+				
+			</div>
+			<div class="tab-pane lexbox4 p-5" id="demo4" style="height: 300px;">
+				
+				<a style="align-self: center;" class="ml-3" href="#">
+					
+					<img class="img-thumbnail "src="https://www.ikea.cn/images/8a/83/8a83db3c5a2ca5c5751d2fa0683d44c4.jpg" 
+					alt="家具组合"  style="width: 240px;height: 175px;">
+					
+					<br>
+					&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;夏季活动特惠
+				</a>
+				<a style="align-self: center;" class="ml-3" href="#">
+					
+					<img class="img-thumbnail "src="https://www.ikea.cn/images/c1/7d/c17d3891062e669e6cf2bba2a9dec1bc.jpg?f=xxxs" 
+					alt="家具组合"  style="width: 240px;height: 175px;">
+					<br>
+					&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;会员特惠
+				</a>
+				<a style="align-self: center;" class="ml-3" href="#">
+					
+					<img class="img-thumbnail "src="https://www.ikea.cn/images/fb/05/fb050d6ff9a19460f6d71c9ba320253f.jpg?f=xxxs" 
+					alt="家具组合"  style="width: 240px;height: 175px;">
+					<br>
+					&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;更低价格
+				</a>
+				<a style="align-self: center;" class="ml-3" href="#">
+			
+					<img class="img-thumbnail "src="https://www.ikea.cn/images/1a/6e/1a6e67a8a7dd47bec5f0515ef3d373e5.jpg?f=xxxs" 
+					alt="家具组合"  style="width: 240px;height: 175px;">
+					<br>
+					&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;我们的超值低价
+				</a>
+				
+			</div>
+			<div class="tab-pane lexbox5 p-5"  id="demo5" style="height: 300px;">
+				<a style="align-self: center;" class="ml-3" href="#">
+					<img class="img-thumbnail "src="https://www.ikea.cn/images/00/cb/00cb62771f7f0a4e8ddf442fb65203d9.jpg" 
+					alt="家具组合"  style="width: 240px;height: 175px;">
+					<br>
+					享受厨房小电器带来的烹饪乐趣
+				</a>
+				<a style="align-self: center;" class="ml-3" href="#">
+					
+					<img class="img-thumbnail "src="https://www.ikea.cn/images/09/a0/09a0d31d2d4892e8f98e1a6bdadc32a5.jpg?f=xxl" 
+					alt="家具组合"  style="width: 240px;height: 175px;">
+					<br>
+					优质睡眠，从选一个好枕头开始
+				</a>
+				<a style="align-self: center;" class="ml-3" href="#">
+					
+					<img class="img-thumbnail "src="https://www.ikea.cn/images/56/92/56923538df9013279b4da489db3aaf57.jpeg?f=xxxs" 
+					alt="家具组合"  style="width: 240px;height: 175px;">
+					<br>
+					HAUGA 豪嘉 全屋储物系列
+				</a>
+				<a style="align-self: center;" class="ml-3" href="#">
+					
+					<img class="img-thumbnail "src="https://www.ikea.cn/images/e8/99/e899db12494dde6cf241a6542731daec.jpg?f=xxxs" 
+					alt="家具组合"  style="width: 240px;height: 175px;">
+					<br>
+					<span style="margin-left: 50px;">全新电竞系列产品</span>
+				
+				</a>
+			
+				<a style="align-self: center;" class="ml-3" href="#">
+					
+					<img class="img-thumbnail "src="https://www.ikea.cn/images/82/41/82417122d616ce109eae9a2ddc638c93.jpg?f=xxxs" 
+					alt="家具组合"  style="width: 240px;height: 175px;">
+					<br>
+					FÖRNUFTIG 费努福提 空气净化器
+				</a>
+			
+			</div>
+			<div class="tab-pane lexbox6 p-5"  id="demo6" style="height: 300px;">
+				
+				<a style="align-self: center;" class="ml-3" href="#">
+					<img class="img-thumbnail "src="https://www.ikea.cn/images/a6/18/a6182b12628b72a0850e517229cd3a76.jpg?f=xxxs" 
+					alt="家具组合"  style="width: 240px;height: 175px;">
+					<br>
+					
+					<span style="margin-left: 70px;">全屋设计</span>
+				</a>
+				
+				<a style="align-self: center;" class="ml-3" href="#">
+					<img class="img-thumbnail "src="https://www.ikea.cn/images/17/08/1708ac13936842dc1530580ec9fefa42.jpg?f=xxxs" 
+					alt="家具组合"  style="width: 240px;height: 175px;">
+					<br>
+					
+					<span style="margin-left: 70px;">厨房设计</span>
+				</a>
+				<a style="align-self: center;" class="ml-3" href="#">
+					<img class="img-thumbnail "src="https://www.ikea.cn/images/14/27/14278bb07df8e8ad98f42a3bd5777072.jpg?f=xxxs" 
+					alt="家具组合"  style="width: 240px;height: 175px;">
+					<br>
+					
+					<span style="margin-left: 70px;">对公服务</span>
+				</a>
+				<a style="align-self: center;" class="ml-3" href="#">
+					<img class="img-thumbnail "src="https://www.ikea.cn/images/8a/39/8a394dfae77d707345db1e816a0ce263.jpg?f=xxxs" 
+					alt="家具组合"  style="width: 240px;height: 175px;">
+					<br>
+					
+					<span style="margin-left: 70px;">免费订购沙发小样</span>
+				</a>
+			
+			</div>
+		</div>
+		
+
+        <div class="container " style="margin-left:120px;margin-top: 150px;">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div  ><h1><strong>购物车</strong></h1></div>
+                    <div class="content">
+
+                        <ul class="mt-5 gouwUl">
+                            <li class="mb-5">
+                                <input type="checkbox" id="quanxuan" class="mr-2" ><label for="quanxuan">全选</label>
+                            </li>
+                            <li class="media">
+                                <input type="checkbox" class="mt-5 mr-2" id="gwcheck">
+                                <img style="width: 140px;height: 140px;" src="https://www.ikea.cn/cn/zh/images/products/oftast-ao-fu-ta-shen-pan-bai-se__0712360_PE728779_S4.JPG">
+                                <div class="media-body">
+                                    <p class="ml-2">
+                                        OFTAST 奥夫塔
+                                        <span class="mt-4" style="display: inline-block;float: right;"><strong>￥7.80</strong></span>
+                                    </p>
+                                    
+                                    <p class="text-muted ml-2">白色，深盘</p>
+                                    <p class="text-muted ml-2">单价：￥3.90</p>
+                                    <div class="sum ml-2">
+                                        <a><img src="img/减购.png" style="width: 24px;height: 24px;"></a>
+                                        <input type="text" value="2" class="num" style="width: 30px;height: 24px; border: 0;align-self: center;">
+                                        <a><img src="img/加购.png" style="width: 24px;height: 24px;">  </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="media mt-5">
+                                <input type="checkbox" class="mt-5 mr-2" id="gwcheck">
+                                <img style="width: 140px;height: 140px;" src="https://www.ikea.cn/cn/zh/images/products/oftast-ao-fu-ta-shen-pan-bai-se__0712360_PE728779_S4.JPG">
+                                <div class="media-body">
+                                    <p class="ml-2">
+                                        OFTAST 奥夫塔
+                                        <span class="mt-4" style="display: inline-block;float: right;"><strong>￥7.80</strong> </span>
+                                    </p>
+                                    <p class="text-muted ml-2">白色，深盘</p>
+                                    <p class="text-muted ml-2">单价：￥3.90</p>
+                                    <div class="sum ml-2">
+                                        <a><img src="img/减购.png" style="width: 24px;height: 24px;"></a>
+                                        <input type="text" value="2" class="num" style="width: 30px;height: 24px; border: 0;align-self: center;">
+                                        <a><img src="img/加购.png" style="width: 24px;height: 24px;">  </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2 " style="margin-top: 220px;margin-left: 150px;" >
+                    <div >
+                        <p class="text-muted rightp">商品小计
+                            <span class="" style="display: inline-block; float: right;">￥3.90</span>
+                        </p>
+                        
+                    </div>
+                    <div>
+                        <p class="text-muted rightp">促销优惠
+                            <span class="" style="display: inline-block; float: right;">￥0.00</span>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text-muted rightp">会员优惠
+                            <span class="" style="display: inline-block; float: right;">￥0.00</span>
+                        </p>
+                    </div>
+                    <div>
+                        <p class=" rightp"><strong> 合计
+                            <span class="" style="display: inline-block; float: right;">￥3.90</span></strong>
+                        </p>
+                    </div>
+                    <div class="mt-3">
+                        <button class="btn btn-info mt-3">结算</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        	<!-- 底部模块 -->
+		<div class="footer mt-5">
+			<ul class="footerul d-flex mt-5">
+				<li style="width: 300px;">
+					<p><strong>加入俱乐部</strong></p>
+					<p class="mt-3"><small>
+						使用宜家俱乐部会员卡，享受折扣，灵感和许多美好事物，使你的想法栩栩如生。
+					</small></p>
+					<a href="#" style="display: inline-block;" class="mt-5"><button type="button" class="btn btn-success rounded">立即加入</button></a>
+				</li>
+				<li style="width: 200px;">
+					<p><strong>常用链接</strong></p>
+					<p><small>宜家《家居指南》及手册</small></p>
+					<p><small>宜家家居APP</small></p>
+					<p><small>本地商场</small></p>
+					<p><small>在线设计工具</small></p>
+					<p><small>宜家俱乐部</small></p>
+					<p><small>宜家对公业务</small></p>
+
+				</li>
+				<li style="width: 200px;">
+					<p><strong>客户服务</strong></p>
+					<p><small>我们的服务</small></p>
+					<p><small>联系我们</small></p>
+					<p><small>网上商城配送范围</small></p>
+					<p><small>常见问题</small></p>
+					<p><small>退货政策</small></p>
+					<p><small>品质保证</small></p>
+				</li>
+				<li style="width: 200px;">
+					<p><strong>关于我们</strong></p>
+					<p><small>这就是宜家</small></p>
+					<p><small>民主设计</small></p>
+					<p><small>可持续的日常生活</small></p>
+					<p><small>社区参与</small></p>
+					<p><small>加入我们</small></p>
+					<p><small>IKEA Foundation</small></p>
+				</li>
+				<li style="width: 200px;">
+					<p><strong>宜家新闻</strong></p>
+					<p><small>新闻室</small></p>
+					<p><small>新闻联络</small></p>
+					<p><small>商品召回</small></p>
+					<p><small>牢牢固定！</small></p>
+				
+
+				</li>
+			</ul>
+		</div>
+</body>
+</html>

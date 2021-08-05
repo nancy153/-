@@ -1,0 +1,69 @@
+li{
+	list-style-type: none;
+}
+
+.tabbox a{
+	float: left;
+	display: inline-block;
+	margin: 20px 40px;
+	border-radius: 10px;
+}
+.flebox{
+	background-color:\f139;;
+}
+.flebox ul li{
+	margin-bottom: 10px;
+}
+.lexbox2 a{
+	float: left;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+.lexbox3 a{
+	float: left;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+.lexbox4 a{
+	float: left;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+.lexbox5 a{
+	float: left;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+.lexbox6 a{
+	float: left;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+.footerul li
+{
+	float: left;
+	margin-left: 100px;
+}
+.content .middle li
+{
+	float: left;
+	width: 265px;
+	height: 110px;
+	margin-right: 100px;
+}
+.footer .foot1
+{
+	
+}
+
+.lonform input{
+	background-color: transparent;
+	border-top: 0;
+	border-right: 0;
+	border-left: 0;
+	border-bottom: 1px solid blue;
+}
+.btn-circle
+{
+	border-radius: 25px;
+}
